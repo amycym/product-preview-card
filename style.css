@@ -1,10 +1,10 @@
 :root {
-    --clr-primary-hsl-400 : 158, 36%, 37%;
-    --clr-primary-hsl-200: 30, 38%, 92%;
+    --clr-primary-hsl-400:  hsl(158, 36%, 37%);
+    --clr-primary-hsl-200: hsl(30, 38%, 92%);
 
-    --clr-neutral-hsl-900: 212, 21%, 14%;
-    --clr-neutral-hsl-400: 228, 12%, 48%;
-    --clr-neutral-hsl-100: 0, 0%, 100%;
+    --clr-neutral-hsl-900: hsl(212, 21%, 14%);
+    --clr-neutral-hsl-400: hsl(228, 12%, 48%);
+    --clr-neutral-hsl-100: hsl(0, 0%, 100%);
 
     --font-family-base: "Montserrat", sans-serif;
     --font-family-accent: "Fraunces", serif;
@@ -55,4 +55,36 @@ body {
     background-color: var(--clr-neutral-hsl-100);
     border-radius: 0.5rem;
     overflow: hidden;
+    --content-padding: 1.5rem;
+}
+
+.product-content {
+    border: 3px solid red;
+    display: grid;
+    gap: 1rem;
+    padding: var(--content-padding);
+}
+
+.product-category {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.product-title {
+    font-size: 2rem;
+    font-family: var(--font-family-accent);
+    color: var(--clr-neutral-hsl-900);
+    line-height: 1;
+    font-weight: var(--fw-bold);
+}
+
+.product-price {
+    font-size: 2rem;
+    font-family: var(--font-family-accent);
+    color: var(--clr-primary-hsl-400);
+    font-weight: var(--fw-bold);
+}
+
+.product-original-price {
+    text-decoration: line-through;
 }
