@@ -10,7 +10,7 @@
     --font-family-accent: "Fraunces", serif;
     --fw-regular: 500;
     --fw-bold: 700;
-    
+
 }
 
 *,
@@ -28,4 +28,31 @@ img,
 svg {
     display: block;
     max-width: 100%;
+}
+
+/* general */
+body {
+    font-family: var(--font-family-base);
+    font-weight: var(--fw-regular);
+    color: var(--clr-neutral-hsl-400);
+    font-size: 0.875rem;
+    background-color: var(--clr-primary-hsl-200);
+
+    /* for this project */
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    margin: 1rem;
+}
+
+.flex-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.product {
+    background-color: var(--clr-neutral-hsl-100);
+    border-radius: 0.5rem;
+    overflow: hidden;
 }
