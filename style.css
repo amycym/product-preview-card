@@ -10,7 +10,6 @@
     --font-family-accent: "Fraunces", serif;
     --fw-regular: 500;
     --fw-bold: 700;
-
 }
 
 *,
@@ -43,6 +42,17 @@ body {
     place-content: center;
     min-height: 100vh;
     margin: 1rem;
+}
+
+/* for screen reader only */
+span:not(:focus):not(:active) {
+    clip:rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
 }
 
 .flex-group {
@@ -86,5 +96,4 @@ body {
 }
 
 .product-original-price {
-    text-decoration: line-through;
 }
