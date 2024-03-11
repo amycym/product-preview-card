@@ -1,0 +1,31 @@
+:root {
+    --clr-primary-hsl-400 : 158, 36%, 37%;
+    --clr-primary-hsl-200: 30, 38%, 92%;
+
+    --clr-neutral-hsl-900: 212, 21%, 14%;
+    --clr-neutral-hsl-400: 228, 12%, 48%;
+    --clr-neutral-hsl-100: 0, 0%, 100%;
+
+    --font-family-base: "Montserrat", sans-serif;
+    --font-family-accent: "Fraunces", serif;
+    --fw-regular: 500;
+    --fw-bold: 700;
+    
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    font: inherit;
+}
+
+img,
+svg {
+    display: block;
+    max-width: 100%;
+}
